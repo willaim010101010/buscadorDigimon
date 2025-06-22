@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorador</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="theme-toggle">
+        <input type="checkbox" id="darkModeToggle" class="toggle-checkbox">
+        <label for="darkModeToggle" class="toggle-label">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <span class="toggle-ball"></span>
+        </label>
+    </div>
+
+    <div class="app-container">
+        <header class="app-header">
+            <div class="logo">
+                <i class="fas fa-dragon"></i>
+                <h1>Explorador Digimon B</h1>
+            </div>
+        </header>
+
+        <main class="content-area">
+            <div class="main-content">
+                <div class="search-container">
+                    <input type="text" id="digimonId" placeholder="Ingresar el nombre Digimon">
+                    <button id="searchDigimonBtn">Buscar</button>
+                </div>
+                <div id="digimonDetails" class="digimon-details">
+                    Aqui va la informacion
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+    <footer class="app-footer">
+        <div class="footer-content">
+            <p>Programacion web 3 &copy; 2025 realizado con auxiliar kevin</p>
+        </div>
+    </footer>
+
+    <script src="digimon-api.js"></script>
+    <script src="theme-toggle.js"></script>
+</body>
+</html>
